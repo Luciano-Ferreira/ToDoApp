@@ -1,0 +1,101 @@
+.mainContainer {
+  max-width: 46rem;
+  margin: 0 auto;
+}
+
+.formTodo {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 46rem;
+  height: 3.375rem;
+  margin: -2rem auto 2rem;
+
+}
+
+.formTodo input {
+  width: 100%;
+  background: var(--gray-500);
+  border: 0;
+  padding-left: 1rem;
+  font-size: 1rem;
+  color: var(--gray-100);
+  border-radius: 8px;
+}
+
+.formTodo input::placeholder {
+  width: 100%;
+  background: var(--gray-500);
+  border: 0;
+  padding-left: 1rem;
+  font-size: 1rem;
+  color: var(--gray-300);
+  border-radius: 8px;
+}
+
+
+.formTodo button[type=submit] {
+  width: 5.25rem;
+  display: flex;
+  background-color: var(--blue-dark);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  cursor: pointer;
+
+  gap: 0.2rem;
+}
+
+.taskForm button[type=submit]:hover {
+  background: var(--blue);
+}
+
+.content {
+  margin-top: 4rem;
+}
+
+.content header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+}
+.content span {
+  height: 1.5rem;
+  width: auto;
+  padding: 1px 0.5rem;
+  background-color: var(--gray-400);
+  color: var(--gray-200);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+  font-weight: bold;
+  font-size: 12px;
+    
+}
+
+.createdTasks {
+  display: flex;
+  align-items: center;
+
+}
+
+.createdTasks strong { 
+  color: var(--blue);
+}
+
+
+.donedTasks {
+  display: flex;
+  align-items: center;
+  
+}
+
+.donedTasks strong {
+  color: var(--purple);
+}
+

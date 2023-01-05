@@ -10,7 +10,6 @@
   width: 46rem;
   height: 3.375rem;
   margin: -2rem auto 2rem;
-
 }
 
 .formTodo input {
@@ -33,11 +32,12 @@
   border-radius: 8px;
 }
 
-
-.formTodo button[type=submit] {
+.formTodo button[type='submit'] {
   width: 5.25rem;
   display: flex;
   background-color: var(--blue-dark);
+  color: var(--gray-100);
+
   border-radius: 8px;
   font-size: 14px;
   font-weight: bold;
@@ -47,9 +47,20 @@
   cursor: pointer;
 
   gap: 0.2rem;
+
+  svg {
+    margin: 0.08rem 0 -0.09rem;
+
+  }
 }
 
-.taskForm button[type=submit]:hover {
+.formTodo button[type='submit']:hover {
+  transition: 2;
+  background-color: var(--blue);
+  
+}
+
+.taskForm button[type='submit']:hover {
   background: var(--blue);
 }
 
@@ -61,41 +72,37 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 1.5rem;
-}
-.content span {
-  height: 1.5rem;
-  width: auto;
-  padding: 1px 0.5rem;
-  background-color: var(--gray-400);
-  color: var(--gray-200);
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 0.5rem;
-  font-weight: bold;
-  font-size: 12px;
-    
+
+  span {
+    height: 1.5rem;
+    width: auto;
+    padding: 1px 0.5rem;
+    background-color: var(--gray-400);
+    color: var(--gray-200);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+    font-weight: bold;
+    font-size: 12px;
+  }
 }
 
 .createdTasks {
   display: flex;
   align-items: center;
-
 }
 
-.createdTasks strong { 
+.createdTasks strong {
   color: var(--blue);
 }
-
 
 .donedTasks {
   display: flex;
   align-items: center;
-  
 }
 
 .donedTasks strong {
   color: var(--purple);
 }
-
